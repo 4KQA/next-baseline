@@ -1,10 +1,9 @@
+import { LogoIcon } from "@assets/icons/Logo";
 import { Box, Fade, Text } from "@chakra-ui/react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
-import Logo from "./logo.svg";
-
-function Example() {
+export function Example() {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -29,7 +28,7 @@ function Example() {
           translateY: { duration: 2, ease: "easeOut" },
         }}
       >
-        <Logo width="25vw" height="auto" />
+        <LogoIcon width="25vw" height="100%" />
       </motion.div>
       <br />
       <motion.div
@@ -46,5 +45,3 @@ function Example() {
     </Box>
   );
 }
-
-export default Example;
