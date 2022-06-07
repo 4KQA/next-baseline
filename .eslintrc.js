@@ -1,9 +1,8 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   extends: [
-    "eslint-config-next",
-    "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier",
+  parser: "@typescript-eslint/parser",
+  extends: ["next", "prettier"],
   ],
   rules: {
     "no-unused-vars": "off",
