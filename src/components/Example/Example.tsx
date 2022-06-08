@@ -11,7 +11,7 @@ export function Example () {
       opacity: [0, 1],
       translateY: [20, 0],
     })
-  }, [controls])
+  }, [])
 
   return (
     <Box
@@ -21,9 +21,13 @@ export function Example () {
       alignItems="center"
       flexFlow="column nowrap"
     >
-      <motion.div
+       <motion.div
         animate={controls}
-        initial={{ opacity: 0, translateY: 20 }}
+
+        initial={{
+          opacity: 0,
+          translateY: 20,
+        }}
         transition={{ translateY: { duration: 2, ease: "easeOut" } }}
       >
         <LogoIcon width="25vw" height="100%" />
