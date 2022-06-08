@@ -1,10 +1,14 @@
-import { Container } from "@chakra-ui/react";
-import { PropsWithChildren } from "react";
+import { Container } from "@chakra-ui/react"
+import { PropsWithChildren } from "react"
 
-export function Layout({ children, ...rest }: PropsWithChildren<any>) {
+export type LayoutProps = {
+  children: React.ReactNode
+}
+
+export function Layout ({ children, ...rest }: PropsWithChildren<LayoutProps>) {
   return (
     <Container maxWidth="container.xl" {...rest}>
       {children}
     </Container>
-  );
+  )
 }

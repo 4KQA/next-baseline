@@ -1,17 +1,17 @@
-import { LogoIcon } from "@assets/icons/Logo";
-import { Box, Fade, Text } from "@chakra-ui/react";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { LogoIcon } from "@assets/icons/Logo"
+import { Box, Text } from "@chakra-ui/react"
+import { motion, useAnimation } from "framer-motion"
+import { useEffect } from "react"
 
-export function Example() {
-  const controls = useAnimation();
+export function Example () {
+  const controls = useAnimation()
 
   useEffect(() => {
     controls.start({
       opacity: [0, 1],
       translateY: [20, 0],
-    });
-  }, []);
+    })
+  }, [controls])
 
   return (
     <Box
@@ -24,9 +24,7 @@ export function Example() {
       <motion.div
         animate={controls}
         initial={{ opacity: 0, translateY: 20 }}
-        transition={{
-          translateY: { duration: 2, ease: "easeOut" },
-        }}
+        transition={{ translateY: { duration: 2, ease: "easeOut" } }}
       >
         <LogoIcon width="25vw" height="100%" />
       </motion.div>
@@ -34,14 +32,12 @@ export function Example() {
       <motion.div
         animate={controls}
         initial={{ opacity: 0 }}
-        transition={{
-          opacity: { delay: 0.5, duration: 3 },
-        }}
+        transition={{ opacity: { delay: 0.5, duration: 3 } }}
       >
         <Text fontSize="xl" fontWeight={100}>
           Baseline
         </Text>
       </motion.div>
     </Box>
-  );
+  )
 }
