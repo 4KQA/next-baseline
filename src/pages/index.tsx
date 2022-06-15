@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
-import Example from "@components/Example";
+import { Example } from "@components/Example"
+import type { NextPage } from "next"
 
 const Home: NextPage = () => {
-  return <Example />;
-};
+  return <Example />
+}
 
-export default Home;
+export default Home
