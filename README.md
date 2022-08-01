@@ -1,3 +1,23 @@
+# 4KQA Boilerplate
+
+Directory structure
+
+```sh
+public/                   # Static files, served from the server root and should contain files that likely are not changed
+src/
+  ├── assets/             # Uncompiled Assets files, such as fonts, images, icons,..., inline contents
+  ├── components/         # Most atomic components, e.g. Button, Table,... These components should only render data and not handle logic.
+  ├── hooks/              # Custom hooks. Always prepend them with `use` to follow the rules of hooks.
+  ├── features/           # When using a headless C.M.S to build page modules (Drag and Drop page builder), create these page modules inside here.
+  ├── pages/              # Next.js "pages"
+  ├── partials/           # Layout directory. Place here your Header, Footer, Layout components
+  ├── theme/              # ChakraUI custom theming
+  ├── types/              # Typescript Types
+  └──views/               # Next.js "pages" specific components that should not receive a route path.
+```
+
+# Next.js Boilerplate Description
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Storybook

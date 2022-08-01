@@ -11,7 +11,7 @@ export function Example () {
       opacity: [0, 1],
       translateY: [20, 0],
     })
-  }, [])
+  }, [controls])
 
   return (
     <Box
