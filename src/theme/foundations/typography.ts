@@ -1,3 +1,5 @@
+import "./fonts"
+
 export const textSpecs = {
   /**
    * Text Sizes are built using the 4pt system (aka a multiplaction of 4)
