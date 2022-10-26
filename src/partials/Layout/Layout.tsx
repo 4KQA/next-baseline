@@ -2,12 +2,12 @@ import { Container } from "@chakra-ui/react"
 import { PropsWithChildren } from "react"
 
 export type LayoutProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 export function Layout ({ children, ...rest }: PropsWithChildren<LayoutProps>) {
   return (
-    <Container maxWidth="container.xl" {...rest}>
+    <Container maxWidth="container.xxl" centerContent {...rest}>
       {children}
     </Container>
   )
